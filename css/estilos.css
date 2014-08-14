@@ -1,0 +1,154 @@
+body{
+    font-family: ;
+    font-size: 16px;
+    background: #ddd;
+}
+
+header{
+    background: #11bfb9;
+    padding: 10px;
+}
+.carousel-caption{
+    left: 10%;
+    top:30%;
+    color: #fff;
+}
+.item h2{
+    font-size: 3em;
+}
+.carousel-inner .btn-custom{
+    border-radius: 2px;
+    color: #fff;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 2px solid #fff;
+}
+.btn-active1{
+    background: #fff;
+    color: #27d9c6 !important;
+}
+.btn-active2{
+    background: #fff;
+    color: #2f27d9 !important;
+}
+.btn-active3{
+    background: #fff;
+    color: #d95d27 !important;
+}
+
+.carousel-indicators{
+    left: 15%;
+}
+header figure.logo{
+    margin-left: 20%;
+    position: relative;
+    top: 20px;
+}
+header a{
+    color: #fff;
+    font-weight: bold;
+}
+header a:hover{
+    color: #fff;
+}
+.carousel-inner{
+    margin-top: 97px;
+}
+.content1{
+    background: #fff;
+}
+.content2{
+    background: #f2f2f2;
+    padding: 40px;
+}
+.articles .caption{
+    background: #1bcecb;
+    color: #fff !important;
+}
+
+.content1 .btn-custom{
+    background: #3cf5e1;
+    color: #0e426a !important;
+    padding: 10px 25px;
+    position: relative;
+    left: 9px;
+}
+.blocks{
+    position: relative;
+    left: 100px;
+}
+.txt-neon{
+    color: #27d9c6;
+}
+
+.post{
+    margin-top: 40px;
+    background: #fff;
+    height: 440px;
+    margin-right: 30px;
+    padding: 15px;
+    color: #0e426a;
+    font-weight: bold;
+}
+.counter{
+    background: #fff;
+    padding: 20px;
+}
+.counter li a{
+    background: #dbe0e4;
+    color: #0e426a;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.counter li a:hover{
+    background: #27d9c6;
+    color: #fff;
+}
+.counter-active{
+    background: #27d9c6 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 992px) { 
+    .blocks{
+        left:50px;
+    }
+    .carousel-caption{
+        top:10%;
+}
+    .carousel-inner .btn-custom{
+        width: 140px;
+    }
+}
+@media (max-width: 767px) { 
+    .blocks{
+        left:10px;
+        text-align: center;
+    }
+    .blocks figure img{
+        margin: 0 auto;
+    }
+}
+@media (max-width: 530px) { 
+       .carousel-caption h2{
+        font-size: 1.5em;
+}
+    .carousel-indicators{
+        left: 50%;
+    }
+}
+@media (max-width: 420px) { 
+    .carousel-caption{
+        left: 5%;
+}
+       .carousel-caption h2{
+        font-size: 1em;
+}
+    .carousel-indicators{
+        left: 50%;
+    }
+    .carousel-inner .btn-custom{
+        width: 130px;
+    }
+}

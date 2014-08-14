@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,93 +18,163 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-        <header class="row">
-            <figure class="col-xs-1"><img src="images/logo.png" alt="Logotipo de la empresa"></figure>
-            <nav class="col-xs-4">
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#"> contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div><!--fin del div.container-->
+    <section class="container">
+       <div class="row">
+            <header class="navbar-fixed-top">
+                <figure class="col-xs-1 logo"><img src="images/logo.png" alt="Logotipo de la empresa"></figure>
+                <nav class="col-xs-5 col-xs-offset-7">
+                    <ul class="list-unstyled list-inline text-uppercase row">
+                        <li class="col-xs-12 col-sm-4"><a href="#">home</a></li>
+                        <li class="col-xs-12 col-sm-4"><a href="#">about us</a></li>
+                        <li class="col-xs-12 col-sm-4"><a href="#"> contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+       </div><!--fin del div.row-->
+    </section><!--fin del div.container-->
+    <section class="container galeria">
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="images/galeria_img_1.jpg" alt="...">
+                      <div class="row caption">
+                          <div class="item">
+                              <div class="carousel-caption col-xs-12 col-sm-6">
+                                <h2 class="text-uppercase text-left"><strong>a super-awesome code test</strong></h2>
+                                <a href="#" class="btn btn-custom btn-active1">call to action</a>
+                                <a href="#" class="btn btn-custom">i'll take you place</a>
+                  </div>
+                </div>
+                      </div>
+                      
+
+                    </div>
+                    <div class="item">
+                      <img src="images/galeria_img_2.jpg" alt="...">
+                      <div class="carousel-caption col-xs-12 col-sm-6 first">
+                        <h2 class="text-uppercase text-left"><strong>make it responsive...</strong></h2>
+                        <a href="#" class="btn btn-custom btn-active col-sm-5 col-xs-12 btn-active2">call to action</a>
+                        <a href="#" class="btn btn-custom col-sm-6 col-xs-12">i'll take you place</a>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="images/galeria_img_3.jpg" alt="...">
+                      <div class="carousel-caption col-xs-12 col-sm-6">
+                        <h2 class="text-uppercase text-left"><strong>this is a slider!</strong></h2>
+                        <a href="#" class="btn btn-custom btn-active2 col-sm-5 col-xs-12 btn-active3">call to action</a>
+                        <a href="#" class="btn btn-custom col-sm-6 col-xs-12">i'll take you place</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+
+                </div>
+        </div><!--fin del div.row-->
+    </section><!--fin del section.container.galeria-->
     
     <div class="container">
-        <div class="row contenido1">
-            <h2>about this test</h2>
-            <p>PreferablyThis should be a fully responsive page collapsing to a 1 column grid on mobile.             I’ll leave the particulars of how you handle that up to you :-)  <strong>Consider &lt;IE8 to             be legacy browsers</strong></p>
-            <h3>equal height dungeon masters?</h3>
-            <ul>
-                <li class="col-xs-4">
-                    <img src="images/img_article_1.jpg" alt="">
-                    <h4>heading level</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, delectus, porro nam error nulla officiis atque fugiat eaque vero ducimus libero odio facere eveniet. Officiis accusamus omnis dolorum. Aliquam, corporis!</p>
-                    <a href=""></a>
-                </li>
-                <li class="col-xs-4">
-                    <img src="images/img_article_2.jpg" alt="">
-                    <h4>heading level</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero, ut magni sed debitis, ipsam ab, aut inventore odit quisquam vitae a cumque perferendis blanditiis earum doloribus nemo excepturi ad!</p>
-                    <a href=""></a>
-                </li>
-                <li class="col-xs-4">
-                    <img src="images/img_article_3.jpg" alt="">
-                    <h4>heading level</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus perspiciatis, aliquam illum in veniam eveniet, cupiditate quaerat quo consequuntur, beatae illo esse alias natus exercitationem labore ut dolorem pariatur nostrum.</p>
-                    <a href=""></a>
-                </li>
-            </ul>
+        <div class="row content1">
+            <h2 class="text-center text-uppercase"><strong>about this test</strong></h2>
+            <p class="text-center col-xs-9 col-xs-offset-2">PreferablyThis should be a fully responsive page collapsing to a 1 column grid on mobile.             I’ll leave the particulars of how you handle that up to you :-)  <strong>Consider &lt;IE8 to             be legacy browsers</strong></p>
+            <div class="clearfix"></div>
+            <h3 class="text-uppercase text-center"><strong>equal height dungeon masters?</strong></h3>
+           <div class="articles">
+                  <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                      <img src="images/img_article_1.jpg" alt="">
+                      <div class="caption">
+                        <h3 class="text-uppercase">heading level</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maxime dolores repellat doloribus quod, libero, laboriosam veritatis, natus impedit pariatur saepe consectetur, dolor ipsum voluptatibus unde? Aut, ad obcaecati tempore.</p>
+                        <p class="text-right"><a href="#" class="btn-custom text-uppercase" role="button">click on me</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                      <img src="images/img_article_2.jpg" alt="">
+                      <div class="caption">
+                        <h3 class="text-uppercase">heading level</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maxime dolores repellat doloribus quod, libero, laboriosam veritatis, natus impedit pariatur saepe consectetur, dolor ipsum voluptatibus unde? Aut, ad obcaecati tempore.</p>
+                        <p class="text-right"><a href="#" class="btn-custom text-uppercase" role="button">...and me</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                      <img src="images/img_article_3.jpg" alt="">
+                      <div class="caption">
+                        <h3 class="text-uppercase">heading level</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maxime dolores repellat doloribus quod, libero, laboriosam veritatis, natus impedit pariatur saepe consectetur, dolor ipsum voluptatibus unde? Aut, ad obcaecati tempore.</p>
+                        <p class="text-right"><a href="#" class="btn-custom text-uppercase" role="button">me me me!</a></p>
+                      </div>
+                    </div>
+                  </div>
+           </div>
         </div><!--fin del div.row-->
     </div><!--fin del div.container-->
     
-     <div class="container">
-        <div class="row contenido2">
-            <h5><strong>content grid</strong></h5>
-            <ul>
-                <li class="col-xs-4">
-                    <p>Text only</p>
-                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quaerat consectetur nisi omnis. Eveniet ullam saepe, ab necessitatibus, veritatis ipsum beatae libero? Enim tenetur quidem culpa, suscipit ex ullam vel!</strong></p>
-                </li>
-                <li class="col-xs-4">
-                    <figure><img src="" alt=""></figure>
-                    <p>Image</p>
-                    <h5>with subtitle</h5>
-                </li>
-                <li class="col-xs-4">
-                    <figure><img src="" alt=""></figure>
-                    <p>Image</p>
-                    <h5>with subtitle</h5>
-                </li>
-                <li class="col-xs-4">
-                    <figure><img src="" alt=""></figure>
-                    <p>video embed</p>
-                    <h5>with subtitle</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus unde non dolorem ex amet, expedita doloremque. Numquam quidem, itaque debitis expedita laboriosam, quasi delectus doloribus eius, neque commodi quas, saepe.</p>
-                </li>
-                <li class="col-xs-4">
-                    <p>Text only</p>
-                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nisi odio, earum blanditiis voluptate repellat cupiditate maxime libero magnam corrupti, vel necessitatibus unde praesentium eveniet rem, iste voluptates. Quis, reprehenderit.</strong></p>
-                </li>
-                <li class="col-xs-4">
-                    <p>Text only</p>
-                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nisi odio, earum blanditiis voluptate repellat cupiditate maxime libero magnam corrupti, vel necessitatibus unde praesentium eveniet rem, iste voluptates. Quis, reprehenderit.</strong></p>
-                </li>
-            </ul>
-            <ul class="contador">
-                <li><a href="#" class="active"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </div><!--fin del div.row-->
-    </div><!--fin del div.container-->
+<section class="container content2">
+    <div class="row">
+        <h3 class="text-uppercase text-center"><strong>content grid</strong></h3>
+        <div class="blocks col-sm-12">
+            <div class="col-sm-3 post">
+            <p class="txt-neon"><small>Text only</small></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel exercitationem nulla accusamus earum nam corporis deserunt dolor sunt consequatur esse eaque ratione tempora officia sequi nobis consectetur, amet aliquid animi.</p>
+        </div><!--fin del div.col-sm-4-->
+        <div class="col-sm-3 post">
+            <figure><img src="images/img_2articule_1.jpg" class="img-responsive" alt=""></figure>
+            <p class="txt-neon"><small>Image</small></p>
+            <h4>with subtitle</h4>
+        </div><!--fin del div.col-sm-4-->
+        <div class="col-sm-3 post">
+            <figure><img src="images/img_2articule_1.jpg" class="img-responsive" alt=""></figure>
+            <p class="txt-neon"><small>Image</small></p>
+            <h4>with subtitle</h4>
+        </div><!--fin del div.col-sm-4-->
+        <div class="col-sm-3 post">
+            <figure><img src="images/img_2articule_2.jpg" class="img-responsive" alt=""></figure>
+            <p class="txt-neon"><small>Video Embed</small></p>
+            <h4>with subtitle</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ducimus, quaerat. Porro ipsam adipisci obcaecati impedit eaque at provident, in blanditiis corporis, ratione animi! Illum dolorum porro tempore beatae. Alias!</p>
+        </div><!--fin del div.col-sm-4-->
+        <div class="col-sm-3 post">
+            <p class="txt-neon"><small>Text only</small></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel exercitationem nulla accusamus earum nam corporis deserunt dolor sunt consequatur esse eaque ratione tempora officia sequi nobis consectetur, amet aliquid animi.</p>
+        </div><!--fin del div.col-sm-4-->
+        <div class="col-sm-3 post">
+            <p><small>Text only</small></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel exercitationem nulla accusamus earum nam corporis deserunt dolor sunt consequatur esse eaque ratione tempora officia sequi nobis consectetur, amet aliquid animi.</p>
+        </div><!--fin del div.col-sm-4-->
+        </div><!--fin del div.blocks-->
+    </div><!--fin del div.row-->
+</section><!--fin del section.container-->
+   <section class="container counter">
+       <div class="row">
+           <ul class="list-unstyled list-inline col-xs-12">
+            <li><a href="#" class="counter-active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+       </div>
+   </section>
     
     <footer class="container">
         <div class="row">
-            <p class="col-xs-3">A footer means the end</p>
-            <p class="col-xs-3">Read the Smallprint...</p>
+            <p class="col-xs-12 col-sm-6">A footer means the end</p>
+            <p class="col-xs-12 col-sm-6">Read the Smallprint...</p>
         </div>
     </footer>
 
