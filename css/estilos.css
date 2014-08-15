@@ -8,6 +8,13 @@ header{
     background: #11bfb9;
     padding: 10px;
 }
+nav ul li{
+    
+}
+nav ul a{
+    font-weight: normal;
+    font-size: 14px;
+}
 .carousel-caption{
     left: 10%;
     top:30%;
@@ -67,12 +74,17 @@ header a:hover{
     color: #fff !important;
 }
 
-.content1 .btn-custom{
+.articles .btn-custom{
     background: #3cf5e1;
     color: #0e426a !important;
     padding: 10px 25px;
     position: relative;
     left: 9px;
+}
+.articles .btn-custom:hover{
+    background: #ffffff;
+    transition: background-color 0.5s ease;
+    text-decoration: none;
 }
 .blocks{
     position: relative;
@@ -104,6 +116,7 @@ header a:hover{
 .counter li a:hover{
     background: #27d9c6;
     color: #fff;
+    transition: background-color 0.5s ease;
 }
 .counter-active{
     background: #27d9c6 !important;
@@ -129,6 +142,10 @@ header a:hover{
     .blocks figure img{
         margin: 0 auto;
     }
+    .articles .caption{
+        width: 365px;
+        margin: 0 auto;
+}
 }
 @media (max-width: 530px) { 
        .carousel-caption h2{
@@ -150,5 +167,18 @@ header a:hover{
     }
     .carousel-inner .btn-custom{
         width: 130px;
+    }
+    .articles .caption{
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) { 
+    .carousel-inner .btn-custom{
+        width: 110px;
+        font-size: 12px;
+    }
+    .carousel-indicators{
+        display: none;
     }
 }
